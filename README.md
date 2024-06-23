@@ -1,3 +1,22 @@
+# Cameră Climatică PLC
+
+## Prezentare Generală
+Proiectul implică utilizarea a două aplicații SCADA și un PLC Siemens S7-1214 pentru monitorizarea și controlul temperaturii din interiorul unei camere climatice, construită dintr-un frigider modificat și un încălzitor PTC. Sistemul asigură o reglare precisă a temperaturii pentru diverse aplicații, oferind date în timp real și control prin interfețe SCADA ușor de utilizat.
+
+## Componente Software
+- **Soft Converter Temp:** Utilitar pentru conversia datelor de temperatură din valoarea de rezistență PT100 și afișarea temperaturii în grade Celsius.
+- **Soft Ignition:** Software SCADA pentru vizualizarea proceselor; necesită autentificare cu utilizator: `user` și parolă: `password`.
+- **Soft OPC UA KepServerEx:** Server OPC UA configurat care recuperează datele prin Modbus de la PLC.
+- **Soft Simple SCADA:** Software SCADA simplu pentru vizualizarea proceselor; installer-ul software este atașat.
+- **Soft TIA v18:** Program creat pentru PLC pentru control; necesită Siemens TIA Portal v18.
+
+## Autentificare
+Pentru accesarea software-ului SCADA Ignition:
+- **Utilizator:** user
+- **Parolă:** password
+
+---
+
 # Climatic Chamber PLC
 
 ## Overview
@@ -15,21 +34,3 @@ For accessing the Ignition SCADA software:
 - **Username:** user
 - **Password:** password
 
----
-
-# Cameră Climatică PLC
-
-## Prezentare Generală
-Proiectul implică utilizarea a două aplicații SCADA și un PLC Siemens S7-1214 pentru monitorizarea și controlul temperaturii din interiorul unei camere climatice, construită dintr-un frigider modificat și un încălzitor PTC. Sistemul asigură o reglare precisă a temperaturii pentru diverse aplicații, oferind date în timp real și control prin interfețe SCADA ușor de utilizat.
-
-## Componente Software
-- **Soft Converter Temp:** Utilitar pentru conversia datelor de temperatură din valoarea de rezistență PT100 și afișarea temperaturii în grade Celsius.
-- **Soft Ignition:** Software SCADA pentru vizualizarea proceselor; necesită autentificare cu utilizator: `user` și parolă: `password`.
-- **Soft OPC UA KepServerEx:** Server OPC UA configurat care recuperează datele prin Modbus de la PLC.
-- **Soft Simple SCADA:** Software SCADA simplu pentru vizualizarea proceselor; installer-ul software este atașat.
-- **Soft TIA v18:** Program creat pentru PLC pentru control; necesită Siemens TIA Portal v18.
-
-## Autentificare
-Pentru accesarea software-ului SCADA Ignition:
-- **Utilizator:** user
-- **Parolă:** password
